@@ -1,12 +1,14 @@
 <?php
 include_once 'assets/conn/dbconnect.php';
-
+// include_once 'assets/conn/server.php';
 ?>
 
 
-
+<!-- login -->
+<!-- check session -->
 <?php
 session_start();
+// session_destroy();
 if (isset($_SESSION['patientSession']) != "") {
 header("Location: patient/patient.php");
 }
@@ -78,15 +80,19 @@ alert('User already registered. Please try again');
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>DocOnline</title>
-        
+        <!-- Bootstrap -->
+        <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/style1.css" rel="stylesheet">
         <link href="assets/css/blocks.css" rel="stylesheet">
         <link href="assets/css/date/bootstrap-datepicker.css" rel="stylesheet">
         <link href="assets/css/date/bootstrap-datepicker3.css" rel="stylesheet">
-       
+        <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+        <!-- <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />  -->
+
+        <!--Font Awesome (added because you use icons in your prepend/append)-->
         <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
         <link href="assets/css/material.css" rel="stylesheet">
 
@@ -102,17 +108,19 @@ alert('User already registered. Please try again');
 
    * {box-sizing:border-box}
 
+/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-
+/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -128,17 +136,18 @@ alert('User already registered. Please try again');
   user-select: none;
 }
 
+/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-
+/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-
+/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -149,7 +158,7 @@ alert('User already registered. Please try again');
   text-align: center;
 }
 
-
+/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -158,7 +167,7 @@ alert('User already registered. Please try again');
   top: 0;
 }
 
-
+/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -174,7 +183,7 @@ alert('User already registered. Please try again');
   background-color: #717171;
 }
 
-
+/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -194,10 +203,10 @@ alert('User already registered. Please try again');
 
 
     <body>
-       
+        <!-- navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container-fluid">
-                
+                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -207,14 +216,14 @@ alert('User already registered. Please try again');
                     </button>
                     <a class="navbar-brand" href="index.php"><img alt="Brand" src="assets/img/logonew.jpg" height="48px"></a>
                 </div>
-               
+                <!-- Collect the nav links, forms, and other content for toggling -->
                 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
                     <ul class="nav navbar-nav navbar-right">
                         
 
-                        
+                        <!-- <li><a href="adminlogin.php">Admin</a></li> -->
                         
                         <li><a href="contactus.html" >Contact Us</a>
                    
@@ -250,19 +259,21 @@ alert('User already registered. Please try again');
                 </div>
             </div>
         </nav>
-        
+        <!-- navigation -->
+
+        <!-- modal container start -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                   
+                    <!-- modal content -->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h3 class="modal-title">Sign Up</h3>
                     </div>
-                    
+                    <!-- modal body start -->
                     <div class="modal-body">
                         
-                       
+                        <!-- form start -->
                         <div class="container" id="wrap">
                             <div class="row">
                                 <div class="col-md-6">
@@ -402,7 +413,10 @@ alert('User already registered. Please try again');
                 </div>
             </div>
         </div>
-        
+        <!-- modal end -->
+        <!-- modal container end -->
+
+        <!-- 1st section start -->
         <section id="promo-1" class="content-block promo-1 min-height-600px bg-offwhite">
             <div class="container">
                 <div class="row">
@@ -411,7 +425,7 @@ alert('User already registered. Please try again');
                         <h2>Make an appointment today!</h2>
                         <p>This is Doctor's Schedule. Please <span class="label label-danger">login</span> to make an appointment. </p>
                             
-                        
+                        <!-- date textbox -->
                        
                         <div class="input-group" style="margin-bottom:10px;">
                             <div class="input-group-addon">
@@ -421,7 +435,9 @@ alert('User already registered. Please try again');
                             <input class="form-control" id="date" name="date" value="<?php echo date("Y-m-d")?>" onchange="showUser(this.value)"/>
                         </div>
                        
-                       
+                        <!-- date textbox end -->
+
+                        <!-- script start -->
                         <script>
 
                             function showUser(str) {
@@ -431,10 +447,10 @@ alert('User already registered. Please try again');
                                     return;
                                 } else { 
                                     if (window.XMLHttpRequest) {
-                                       
+                                        // code for IE7+, Firefox, Chrome, Opera, Safari
                                         xmlhttp = new XMLHttpRequest();
                                     } else {
-                                        
+                                        // code for IE6, IE5
                                         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                                     }
                                     xmlhttp.onreadystatechange = function() {
@@ -449,17 +465,34 @@ alert('User already registered. Please try again');
                             }
                         </script>
                         
-                       
+                        <!-- script start end -->
+                     
+                        <!-- table appointment start -->
                         <div id="txtHint"><b> </b></div>
                         
-                       
+                        <!-- table appointment end -->
                     </div>
-                   
+                    <!-- /.col -->
+                   <!--  <div class="col-md-6 col-md-offset-1">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="http://www.youtube.com/embed/FEoQFbzLYhc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div> -->
+                    <!-- /.col -->
                 </div>
-               
+                <!-- /.row -->
             </div>
         </section>
+        <!-- first section end -->
+
         
+        <!-- second section start -->
+        
+        <!-- second section end -->
+        <!-- third section start -->
+        
+        <!-- third section end -->
+        <!-- forth sections start -->
         <section id="content-1-9" class="content-1-9 content-block">
             <div class="container">
                 <div class="underlined-title">
@@ -523,9 +556,9 @@ alert('User already registered. Please try again');
                         </div>
                     </div>
                 </div>
-               
+                <!-- /.row -->
             </div>
-           
+            <!-- /.container -->
         </section>
 
 
@@ -542,23 +575,24 @@ alert('User already registered. Please try again');
                 <p class="pull-right small"><a href="adminlogin.php">Doctor's Portal</a></p>
             </div>
         </div>
-        
+        <!-- footer end -->
     </div>
     
-   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/date/bootstrap-datepicker.js"></script>
     <script src="assets/js/moment.js"></script>
     <script src="assets/js/transition.js"></script>
     <script src="assets/js/collapse.js"></script>
-    
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
     $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').focus()
     })
     </script>
-    
+    <!-- date start -->
+  
 <script>
     $(document).ready(function(){
         var date_input=$('input[name="date"]'); //our date input has the name "date"

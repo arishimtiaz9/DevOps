@@ -1,0 +1,928 @@
+{
+  "id": "d9917e8c-b2a3-4afb-a4a1-6faad60d5ac2",
+  "version": "2.0",
+  "name": "DocOnline Test",
+  "url": "http://localhost:8081/PHP-Doctor-Appointment-System/index.php",
+  "tests": [{
+    "id": "7b428adc-b418-4919-a556-4ce22fcc2f41",
+    "name": "SignUp_test",
+    "commands": [{
+      "id": "40ad1180-580a-42f1-8627-9252e4d98678",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/PHP-Doctor-Appointment-System/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be3b2080-dbc3-4764-8a05-31f8322cc612",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60d037a6-b2c2-4ddf-ae4a-4ca7b3807be8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Up",
+      "targets": [
+        ["linkText=Sign Up", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Up')]", "xpath:link"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "695d196d-36e6-459e-81f2-0a3ac7c40dd0",
+      "comment": "",
+      "command": "click",
+      "target": "name=patientFirstName",
+      "targets": [
+        ["name=patientFirstName", "name"],
+        ["css=.col-xs-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='patientFirstName']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa05748-f788-4217-bdba-4b43019086b1",
+      "comment": "",
+      "command": "type",
+      "target": "name=patientFirstName",
+      "targets": [
+        ["name=patientFirstName", "name"],
+        ["css=.col-xs-6:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='patientFirstName']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Arish"
+    }, {
+      "id": "6c3af57b-5a56-4845-b709-f84f162de57c",
+      "comment": "",
+      "command": "click",
+      "target": "name=patientLastName",
+      "targets": [
+        ["name=patientLastName", "name"],
+        ["css=.col-xs-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='patientLastName']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "099d59d0-2fb0-4229-a5c4-829f0e84dc8c",
+      "comment": "",
+      "command": "type",
+      "target": "name=patientLastName",
+      "targets": [
+        ["name=patientLastName", "name"],
+        ["css=.col-xs-6:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='patientLastName']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "imtiaz"
+    }, {
+      "id": "725fafca-9425-4699-93e5-423128fbd61d",
+      "comment": "",
+      "command": "click",
+      "target": "name=patientEmail",
+      "targets": [
+        ["name=patientEmail", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='patientEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1c8c482-7b44-4172-8644-905d7a403ff9",
+      "comment": "",
+      "command": "type",
+      "target": "name=patientEmail",
+      "targets": [
+        ["name=patientEmail", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='patientEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "arish.imtiaz9@gmail.com"
+    }, {
+      "id": "676c18d2-911c-410f-aab4-2feb30f749b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(4)",
+      "targets": [
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='icPatient'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3b7d0cd-d2fc-4514-8c36-6de1d5f0c4da",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(4)",
+      "targets": [
+        ["css=.form-control:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='icPatient'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "6d5380e0-7bce-4a79-9c3b-0c149b82bd36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e6c884e-41c3-46f6-99a4-e3c3b44e7af3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control:nth-child(5)",
+      "targets": [
+        ["css=.form-control:nth-child(5)", "css:finder"],
+        ["xpath=(//input[@name='password'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "52dd828a-5e9e-4d28-9a2d-b61cd7085f9f",
+      "comment": "",
+      "command": "click",
+      "target": "name=confirm_password",
+      "targets": [
+        ["name=confirm_password", "name"],
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='confirm_password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0ebb470-c0e9-4a8c-aea6-5269cb3335be",
+      "comment": "",
+      "command": "type",
+      "target": "name=confirm_password",
+      "targets": [
+        ["name=confirm_password", "name"],
+        ["css=.form-control:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='confirm_password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "41c69ceb-ce22-4b5f-a9b3-567bef5ea1f7",
+      "comment": "",
+      "command": "click",
+      "target": "name=month",
+      "targets": [
+        ["name=month", "name"],
+        ["css=.col-xs-4:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//select[@name='month']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3886b90a-d6d1-4da2-b576-f0c89d7a4a56",
+      "comment": "",
+      "command": "select",
+      "target": "name=month",
+      "targets": [],
+      "value": "label=Aug"
+    }, {
+      "id": "fea55605-7c22-4e44-b512-d57450780432",
+      "comment": "",
+      "command": "click",
+      "target": "name=day",
+      "targets": [
+        ["name=day", "name"],
+        ["css=.col-xs-4:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//select[@name='day']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08f3b68e-b51a-4a0d-9ead-6136de01cb57",
+      "comment": "",
+      "command": "select",
+      "target": "name=day",
+      "targets": [],
+      "value": "label=17"
+    }, {
+      "id": "2ecccef7-2ce1-4e37-870a-d0e4450bc730",
+      "comment": "",
+      "command": "click",
+      "target": "name=year",
+      "targets": [
+        ["name=year", "name"],
+        ["css=.col-xs-4:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//select[@name='year']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/div[2]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c38c0bff-fe7f-4231-ba39-da928a5d8ae9",
+      "comment": "",
+      "command": "select",
+      "target": "name=year",
+      "targets": [],
+      "value": "label=1995"
+    }, {
+      "id": "ad139428-c0cc-4c18-bb46-a492af8de969",
+      "comment": "",
+      "command": "click",
+      "target": "name=patientGender",
+      "targets": [
+        ["name=patientGender", "name"],
+        ["css=.radio-inline:nth-child(10) > input", "css:finder"],
+        ["xpath=//input[@name='patientGender']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d90aa03a-c162-4df1-8894-7bb7c878cfce",
+      "comment": "",
+      "command": "click",
+      "target": "id=signup",
+      "targets": [
+        ["id=signup", "id"],
+        ["name=signup", "name"],
+        ["css=#signup", "css:finder"],
+        ["xpath=//button[@id='signup']", "xpath:attributes"],
+        ["xpath=//div[@id='wrap']/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7ff6609b-c34e-400b-9af2-a984d87cab49",
+    "name": "Login_Test",
+    "commands": [{
+      "id": "97399078-c156-46e6-a287-991be198c521",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/PHP-Doctor-Appointment-System/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1de058cd-9496-4b6b-bde8-36dfc34c1be4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "300fde98-4125-4dda-a775-1a04e46aeffc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.dropdown-toggle", "css:finder"],
+        ["xpath=//div[@id='bs-example-navbar-collapse-1']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e17c5a71-2b41-4abd-9817-e3505624f1f3",
+      "comment": "",
+      "command": "click",
+      "target": "name=icPatient",
+      "targets": [
+        ["name=icPatient", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='icPatient']", "xpath:attributes"],
+        ["xpath=//ul[@id='login-dp']/li/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "304332d7-e86f-4543-89f8-85d0e50bf357",
+      "comment": "",
+      "command": "type",
+      "target": "name=icPatient",
+      "targets": [
+        ["name=icPatient", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='icPatient']", "xpath:attributes"],
+        ["xpath=//ul[@id='login-dp']/li/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "7930a96e-87fe-41fc-ad8d-8997d0707ce0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//ul[@id='login-dp']/li/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35aeee1a-5916-4c21-9923-9a1180095464",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//ul[@id='login-dp']/li/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "6caee277-b613-482c-95a5-a9773f86d2ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//button[@id='login']", "xpath:attributes"],
+        ["xpath=//ul[@id='login-dp']/li/div/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5c7acd30-5930-403a-b6ba-79f4d1bd5bc5",
+    "name": "DoctorLogin_Test",
+    "commands": [{
+      "id": "d487bf04-8b5d-4b1b-92c3-218464c3d9f4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/PHP-Doctor-Appointment-System/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48c11c85-99f7-4e3e-9203-5ca97539e78f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f199c3f2-a183-42d8-aa45-e5362f675625",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Doctor's Portal",
+      "targets": [
+        ["linkText=Doctor's Portal", "linkText"],
+        ["css=.pull-right > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'adminlogin.php')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3df2a177-6335-4bc8-9386-3789b67b42b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=doctorId",
+      "targets": [
+        ["name=doctorId", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='doctorId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aed01bdd-004e-4f81-a0db-edfb312d1ade",
+      "comment": "",
+      "command": "type",
+      "target": "name=doctorId",
+      "targets": [
+        ["name=doctorId", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='doctorId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "9b889eee-2d2a-437c-9827-16807fbcd714",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "1092218d-f576-45ee-aeb7-e8c17861af97",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0668cf3a-7f2b-4153-a36b-51fd451ac7ca",
+    "name": "Appointment_Test",
+    "commands": [{
+      "id": "cbba623c-0364-4a71-936d-b918499f8025",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/PHP-Doctor-Appointment-System/patient/patient.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f9fbc0e-7cee-429d-8bc5-f87f07ab480e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99803354-2b55-4d75-a2a7-8ff3f7df7bca",
+      "comment": "",
+      "command": "click",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=date", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//section[@id='promo-1']/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "782b2b4f-27ac-46d9-b02a-50c17fea7c76",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .day:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3) > .day:nth-child(3)", "css:finder"],
+        ["xpath=//tr[3]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'16')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e122e7bc-89fc-4283-a18a-162247cd5e81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book Now')])[2]", "xpath:link"],
+        ["xpath=//div[@id='txtHint']/table/tbody/tr[2]/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'appointment.php?&appid=46&scheduleDate=2024-04-16')]", "xpath:href"],
+        ["xpath=//tr[2]/td[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cd4aeb9-3aaa-490c-a822-85e0d8bc47cb",
+      "comment": "",
+      "command": "click",
+      "target": "name=symptom",
+      "targets": [
+        ["name=symptom", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='symptom']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a298b3-c9ef-4364-b70e-22c254a200eb",
+      "comment": "",
+      "command": "type",
+      "target": "name=symptom",
+      "targets": [
+        ["name=symptom", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='symptom']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fever"
+    }, {
+      "id": "1b3dadda-2d8c-47c4-8e32-852e5101a970",
+      "comment": "",
+      "command": "click",
+      "target": "name=comment",
+      "targets": [
+        ["name=comment", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='comment']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85840190-9c91-47ca-a189-76680aa133f5",
+      "comment": "",
+      "command": "type",
+      "target": "name=comment",
+      "targets": [
+        ["name=comment", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//textarea[@name='comment']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Not well"
+    }, {
+      "id": "c02b874c-9540-4ff7-a49f-35705d7d9e56",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=appointment", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f7b81323-c91c-4aed-b45b-89b1bacd0535",
+    "name": "DoctorSchedule_test",
+    "commands": [{
+      "id": "592ab2d9-e9ac-4064-9c6a-0f0bd03ca3c2",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/PHP-Doctor-Appointment-System/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22e6b4dc-193d-42b5-ad3a-79bd10758fd0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc74a509-f58c-47df-8234-f4c891cd16df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Doctor's Portal",
+      "targets": [
+        ["linkText=Doctor's Portal", "linkText"],
+        ["css=.pull-right > a", "css:finder"],
+        ["xpath=//a[contains(@href, 'adminlogin.php')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "266351cb-5fad-4608-b596-00ad12946335",
+      "comment": "",
+      "command": "click",
+      "target": "name=doctorId",
+      "targets": [
+        ["name=doctorId", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='doctorId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36db3156-a93f-499e-9da1-e6b294718c70",
+      "comment": "",
+      "command": "type",
+      "target": "name=doctorId",
+      "targets": [
+        ["name=doctorId", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='doctorId']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "fe6e616a-0856-4baf-aa63-35a3de0dffec",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "1da5829e-cf8c-47af-b13d-50be2ae468be",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f082f4f9-de22-4d36-8dfb-35ced3548f3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Doctor Schedule",
+      "targets": [
+        ["linkText=Doctor Schedule", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Doctor Schedule')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/nav/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'addschedule.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Doctor Schedule')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e0adbc0-ff87-4f06-a16c-813f70217805",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,215)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9df8abfa-9928-4fdd-a207-9868358907c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["name=date", "name"],
+        ["css=#date", "css:finder"],
+        ["xpath=//input[@id='date']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b790b338-444d-4820-9c1e-c187bb0699ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > .day:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(3) > .day:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[6]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'19')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f46cf23e-f96a-4b32-8118-45bf2ee0be1d",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19620e3d-450e-45a2-b638-37bf18deb97c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74f6c156-be7d-42e4-859e-be4b5e9f342a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cddf41f-9775-490c-8090-eb8b330ced18",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.clockpicker-hours > .clockpicker-tick:nth-child(1)",
+      "targets": [
+        ["css=.clockpicker-hours > .clockpicker-tick:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f73caa1-8355-48e4-bb83-e6013b6bfd55",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.clockpicker-canvas-fg",
+      "targets": [
+        ["css=.clockpicker-canvas-fg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b05bf2dd-493f-47f4-bafb-0bea289e7fd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clockpicker-plate",
+      "targets": [
+        ["css=.clockpicker-plate", "css:finder"],
+        ["xpath=//div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f35156c0-9ea7-40a3-b062-9b2e37a5f525",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.clockpicker-minutes > .clockpicker-tick:nth-child(1)",
+      "targets": [
+        ["css=.clockpicker-minutes > .clockpicker-tick:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de63bb8-3198-4f81-9696-ecc47144545a",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.clockpicker-canvas-fg",
+      "targets": [
+        ["css=.clockpicker-canvas-fg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "942a2495-f483-4e7d-9337-d9c3148d83af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.clockpicker-plate",
+      "targets": [
+        ["css=.clockpicker-plate", "css:finder"],
+        ["xpath=//div[2]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f154e558-c5bf-41f4-8277-63c282ef7ac1",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88e67f2d-1f48-4ef7-ae67-185c14cede56",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffa35400-a7af-4155-a7c2-1ddc3697fc40",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2685ac33-6798-40c4-8444-9f9014a309e0",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.clockpicker-dial:nth-child(1) > .clockpicker-tick:nth-child(24)",
+      "targets": [
+        ["css=.clockpicker-dial:nth-child(1) > .clockpicker-tick:nth-child(24)", "css:finder"],
+        ["xpath=//div[3]/div[3]/div/div/div[24]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8000179f-200f-40f1-a385-cb194ea7f93c",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.clockpicker-canvas:nth-child(3) .clockpicker-canvas-fg",
+      "targets": [
+        ["css=.clockpicker-canvas:nth-child(3) .clockpicker-canvas-fg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "48336a5c-c123-4f88-a961-70743827a3ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popover:nth-child(18) .clockpicker-plate",
+      "targets": [
+        ["css=.popover:nth-child(18) .clockpicker-plate", "css:finder"],
+        ["xpath=//div[3]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc434655-f775-4c5b-8205-767323b41b0e",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.clockpicker-minutes:nth-child(2) > .clockpicker-tick:nth-child(12)",
+      "targets": [
+        ["css=.clockpicker-minutes:nth-child(2) > .clockpicker-tick:nth-child(12)", "css:finder"],
+        ["xpath=//div[3]/div[3]/div/div[2]/div[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f15c75c-3e1f-49ca-a7ff-a8f1c2df3612",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.clockpicker-canvas:nth-child(3) .clockpicker-canvas-fg",
+      "targets": [
+        ["css=.clockpicker-canvas:nth-child(3) .clockpicker-canvas-fg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "38365f1b-67e7-49a3-b108-35688903229f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popover:nth-child(18) .clockpicker-plate",
+      "targets": [
+        ["css=.popover:nth-child(18) .clockpicker-plate", "css:finder"],
+        ["xpath=//div[3]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7082a18-df41-405f-a11f-8f59e854d000",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=.col-sm-10 > .btn", "css:finder"],
+        ["xpath=//button[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div[2]/div/div/div/div/form/div[6]/div/button", "xpath:idRelative"],
+        ["xpath=//div[6]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "990d7241-af8e-4623-a0dd-2424843a3c86",
+    "name": "PatientList_Test",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "ed637086-7891-4c33-a9fb-500efc687546",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8081/", "http://localhost:8081/PHP-Doctor-Appointment-System/index.php", "http://localhost:8081/PHP-Doctor-Appointment-System/patient/patient.php"],
+  "plugins": []
+}

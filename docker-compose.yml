@@ -7,7 +7,7 @@ services:
     container_name: my-php-app
     restart: unless-stopped
     ports:
-      - "9009:80"
+      - "8080:80"
     volumes:
       - .:/var/www/html
     depends_on:
@@ -30,7 +30,7 @@ services:
     container_name: my-phpmyadmin
     restart: unless-stopped
     ports:
-      - "9010:80"
+      - "8081:80"
     environment:
       PMA_HOST: database
       MYSQL_ROOT_PASSWORD: root

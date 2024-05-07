@@ -1,21 +1,36 @@
-version: "2"
+version: '3.7'
 services:
-  webserver:
-    image: mydemophpimage
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-php-app
+    restart: unless-stopped
     ports:
-      - "80:80"
-      - "443:443"
+      - "9009:80"
     volumes:
-      - ./app:/var/www/html
-    environment:
-      MYSQL_DB_CONNECTION: test
-      MYSQL_DB_NAME: test
-      MYSQL_USER: test
-      MYSQL_PASSWORD: test
-      SITE_URL: http://localhost
-    networks:
-      - test
+      - .:/var/www/html
+    depends_on:
+      - database
 
-networks:
-  test:
-    external: true
+  database:
+    image: mysql:latest
+    container_name: my-mysql-db
+    restart: unless-stopped
+    ports:
+      - "3305:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: devops
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: my-phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "9010:80"
+    environment:
+      PMA_HOST: database
+      MYSQL_ROOT_PASSWORD: root

@@ -9,3 +9,10 @@ RUN docker-php-ext-install mysqli
 
 # Copy the current directory contents into the container at /var/www/html
 COPY . /var/www/html
+
+
+
+#refat share the command 
+# docker-compose up -d --build 
+# docker compose up
+

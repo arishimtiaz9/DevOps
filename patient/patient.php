@@ -238,8 +238,8 @@ $userRow=mysqli_fetch_array($res,MYSQLI_ASSOC);
 		<!-- footer start -->
 		<div class="copyright-bar bg-black">
 			<div class="container">
-				<p class="pull-left small">© pgblocks - Pinegrow Blocks</p>
-				<p class="pull-right small">Made with <i class="fa fa-heart pomegranate"></i> on Planet Earth</p>
+				<p class="pull-left small">21BCAF14</p>
+				<p class="pull-right small">Made with <i class="fa fa-heart pomegranate"></i>by ARISH</p>
 			</div>
 		</div>
 		<!-- footer end -->
